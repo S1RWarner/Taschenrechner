@@ -36,7 +36,7 @@ public class Taschenrechner {
                 break;
             default:
                 System.out.println("Mögliche Eingaben wären ja, Ja, nein und Nein." +
-                        "Versuch's nochmal");
+                        " Versuchen Sie es nochmal!");
                 disclaimer();
 
         }
@@ -73,7 +73,7 @@ public class Taschenrechner {
         String sign = operator.nextLine();
 
         Scanner zweiteZahl = new Scanner(System.in);
-        double b = ersteZahl.nextDouble();
+        double b = zweiteZahl.nextDouble();
         //Damit man nur die Rechnung sieht
         System.out.println(" ");
         System.out.println(" ");

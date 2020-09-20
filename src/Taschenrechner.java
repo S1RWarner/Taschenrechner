@@ -54,7 +54,7 @@ public class Taschenrechner {
         System.out.println("6. Die Potenz von einer Zahl berechnen");
         System.out.println("7. Modulo einer Zahl");
 
-
+        //Noch switch case bauen
         basicCalc();
         quadratWurzel();
         fakultaet();
@@ -65,36 +65,60 @@ public class Taschenrechner {
     }
 
     public static void basicCalc(){
-        System.out.println("Bitte geben sie die erste Zahl für die Rechnung ein");
+
         Scanner ersteZahl = new Scanner(System.in);
         double a = ersteZahl.nextDouble();
 
-        System.out.println("Bitte geben sie die ersten Rechenoperator ein.");
         Scanner operator = new Scanner(System.in);
         String sign = operator.nextLine();
 
-        System.out.println("Bitte geben sie die erste Zahl für die Rechnung ein");
         Scanner zweiteZahl = new Scanner(System.in);
         double b = ersteZahl.nextDouble();
-        //Anzeigen der Rechnung
-
+        //Damit man nur die Rechnung sieht
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
         doBasicCalc(a, b, sign);
+
 
     }
 
     public static void doBasicCalc(double a, double b, String sign) {
+        //Anzeigen der Rechnung
         System.out.print(a + sign + b);
+
+        //Entscheiden welche Operation getätigt wird
         switch (sign) {
             case "*":
-
+                a = a*b;
+                System.out.print("=" + a);
+                break;
             case "/":
-
+                a = a/b;
+                System.out.print("=" + a);
+                break;
             case "+":
+                a = a+b;
+                System.out.print("=" + a);
+                break;
 
             case "-":
-
+                a = a-b;
+                System.out.print("=" + a);
+                break;
             default:
-
+                System.out.println("Kein gültiges Rechenzeichen, gültig sind + - * /" +
+                        "Versuchen Sie es nochmal!");
+                basicCalc();
         }
     }
 

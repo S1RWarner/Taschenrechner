@@ -11,9 +11,9 @@ public class Taschenrechner {
         System.out.println("____________________________________");
         System.out.println("Bitte beachten Sie, dass das Programm die Operationen in Zweierblöcken berechnet");
         System.out.println("2+2*2 würde somit als (2+2)*2 gerechnet werden.");
-        System.out.println();
+        System.out.println(" ");
         System.out.println("Updates sind in Bearbeitung");
-        System.out.println();
+        System.out.println(" ");
         System.out.println("Wollen sie dennoch fortfahren");
         disclaimer();
     }
@@ -55,13 +55,34 @@ public class Taschenrechner {
         System.out.println("7. Modulo einer Zahl");
 
         //Noch switch case bauen
-        basicCalc();
-        quadratWurzel();
-        fakultaet();
-        prozent();
-        brueche();
-        potenz();
-        modulo();
+        Scanner scan = new Scanner(System.in);
+        int chooseCalc = scan.nextInt();
+        switch (chooseCalc){
+            case 1:
+                basicCalc();
+                break;
+            case 2:
+                quadratWurzel();
+                break;
+            case 3:
+                fakultaet();
+                break;
+            case 4:
+                prozent();
+                break;
+            case 5:
+                brueche();
+                break;
+            case 6:
+                potenz();
+                break;
+            case 7:
+                modulo();
+                break;
+            default:
+                System.out.println("Bitte geben sie eine valide Nummer ein!");
+                whichCalculation();
+        }
     }
 
     public static void basicCalc(){
@@ -123,20 +144,26 @@ public class Taschenrechner {
     }
 
     public static void modulo() {
+        System.out.println("Under construction");
     }
 
     public static void potenz() {
+        System.out.println("Under construction");
     }
 
     public static void brueche() {
+        System.out.println("Under construction");
     }
 
     public static void prozent() {
+        System.out.println("Under construction");
     }
 
     public static void fakultaet() {
+        System.out.println("Under construction");
     }
 
     public static void quadratWurzel() {
+        System.out.println("Under construction");
     }
 }

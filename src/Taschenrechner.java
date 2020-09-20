@@ -55,6 +55,11 @@ public class Taschenrechner {
         System.out.println("1. Simple + - * / rechnungen");
         System.out.println("2. Quadratwurzel ziehen");
         System.out.println("3. Die Fakultät einer bestimmten Zahl berechnen");
+        System.out.println("4. Den Prozentsatz einer Zahl berechnen");
+        System.out.println("5. Den Bruch aus zwei Zahlen rechnen");
+        System.out.println("6. Die Potenz von einer Zahl berechnen");
+        System.out.println("7. Modulo einer Zahl");
+
         //Methoden der verschiedenen Rechenoperationen
         //Überlegen mit tausend schleifen oder Disclaimer
         basicCalc();

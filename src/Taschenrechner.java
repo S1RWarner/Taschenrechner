@@ -11,9 +11,9 @@ public class Taschenrechner {
         System.out.println("____________________________________");
         System.out.println("Bitte beachten Sie, dass das Programm die Operationen in Zweierblöcken berechnet");
         System.out.println("2+2*2 würde somit als (2+2)*2 gerechnet werden.");
-        System.out.println("");
+        System.out.println();
         System.out.println("Updates sind in Bearbeitung");
-        System.out.println("");
+        System.out.println();
         System.out.println("Wollen sie dennoch fortfahren");
         disclaimer();
     }
@@ -77,8 +77,25 @@ public class Taschenrechner {
         Scanner zweiteZahl = new Scanner(System.in);
         double b = ersteZahl.nextDouble();
         //Anzeigen der Rechnung
-        System.out.print(a + sign + b);
 
+        doBasicCalc(a, b, sign);
+
+    }
+
+    public static void doBasicCalc(double a, double b, String sign) {
+        System.out.print(a + sign + b);
+        switch (sign) {
+            case "*":
+
+            case "/":
+
+            case "+":
+
+            case "-":
+
+            default:
+
+        }
     }
 
     public static void modulo() {

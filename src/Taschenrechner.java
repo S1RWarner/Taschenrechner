@@ -152,6 +152,24 @@ public class Taschenrechner {
       Scanner unten = new Scanner(System.in);
       double u = unten.nextDouble();
         System.out.println("Under construction");
+        Scanner base = new Scanner(System.in);
+        double basis = base.nextDouble();
+
+        System.out.print(basis + "^");
+
+        Scanner expo = new Scanner(System.in);
+        double exponent = expo.nextDouble();
+        double sum;
+        for(int i = 0; i <= exponent; i++){
+            sum = basis * basis;
+            if(i < exponent){
+                System.out.println(" ");
+            }
+            else{
+                System.out.print(basis + "^" + exponent + " = " + sum);
+            }
+        }
+
     }
 
     public static void brueche() {

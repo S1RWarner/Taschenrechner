@@ -46,7 +46,7 @@ public class Taschenrechner {
         //Auswahlmenü der verschiedenen Operationen
         //TODO: Umstrukturieren auf Kastenmenü Option 1 || Option 2
         System.out.println("Diese Rechnungen sind möglich:");
-        System.out.println("1. Simple + - * / rechnungen");
+        System.out.println("1. Simple + - * / Rechnungen");
         System.out.println("2. Quadratwurzel ziehen");
         System.out.println("3. Die Fakultät einer bestimmten Zahl berechnen");
         System.out.println("4. Den Prozentsatz einer Zahl berechnen");

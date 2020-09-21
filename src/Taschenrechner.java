@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//TODO: UI überlegen
 /**
  * Ein simpler Taschenrechner
  * @author Okke
@@ -44,7 +44,7 @@ public class Taschenrechner {
 
     public static void whichCalculation() {
         //Auswahlmenü der verschiedenen Operationen
-        System.out.println("Gute entscheidung");
+        //TODO: Umstrukturieren auf Kastenmenü Option 1 || Option 2
         System.out.println("Diese Rechnungen sind möglich:");
         System.out.println("1. Simple + - * / rechnungen");
         System.out.println("2. Quadratwurzel ziehen");
@@ -96,6 +96,7 @@ public class Taschenrechner {
         Scanner zweiteZahl = new Scanner(System.in);
         double b = zweiteZahl.nextDouble();
         //Damit man nur die Rechnung sieht
+        //TODO: Was schöneres überlegen
         System.out.println(" ");
         System.out.println(" ");
         System.out.println(" ");
@@ -205,7 +206,6 @@ public class Taschenrechner {
             }
 
         }while(counter>0);
-
 
     }
 }

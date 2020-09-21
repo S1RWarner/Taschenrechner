@@ -164,6 +164,48 @@ public class Taschenrechner {
     }
 
     public static void quadratWurzel() {
-        System.out.println("Under construction");
+        System.out.println("Gebe die Zahl ein aus der die Wurzel gezogen werden soll!");
+
+        Scanner zahlInBruch = new Scanner(System.in);
+
+        int q = zahlInBruch.nextInt();
+
+        if(q > 0){
+            //Methode mit dem Heronverfahren
+            heronVerfahren(q);
+        }
+        else {
+            System.out.println("Du kannst keinen Bruch aus negativen Zahlen ziehen...");
+
+        }
+        whichCalculation();
+    }
+
+    //Verfahren um die Wurzel zu bestimmen
+
+    public static void heronVerfahren(int q) {
+
+        //counter um die Wiederholungen zu begrenzen
+        //5 da ab dieser Anzahl sich das Ergebnis im Output (meistens) nicht mehr verändert hat
+
+        int counter = 5;
+        double x = 2;
+        do{
+
+            //Die Formel, um sich der Wurzel anzunähern
+            x = 0.5 * (x + (q/x));
+
+            /*Musste 0.5 nehmen da bei 1/2 immer 0 das Ergebnis war*/
+
+            counter--;
+
+            if(counter>0){}
+            else{
+                System.out.println("Die Wurzel aus " + q + " ist " + x);
+            }
+
+        }while(counter>0);
+
+
     }
 }

@@ -149,6 +149,8 @@ public class Taschenrechner {
     }
 
     public static void potenz() {
+      Scanner unten = new Scanner(System.in);
+      double u = unten.nextDouble();
         System.out.println("Under construction");
     }
 
